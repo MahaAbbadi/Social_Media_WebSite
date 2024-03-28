@@ -12,7 +12,7 @@ function CreatePostForm({ onPostSubmit }) {
     setContent(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  let handleNewSubmission = (e) => {
     e.preventDefault();
     if (!title || !content) return;
     onPostSubmit({ title, content });
@@ -21,7 +21,7 @@ function CreatePostForm({ onPostSubmit }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleNewSubmission}>
       <input
         type="text"
         placeholder="Title"
@@ -39,3 +39,4 @@ function CreatePostForm({ onPostSubmit }) {
 }
 
 export default CreatePostForm;
+
