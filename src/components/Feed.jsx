@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function Feed({ posts }) {
   return (
     <div>

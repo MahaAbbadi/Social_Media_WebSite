@@ -1,6 +1,7 @@
 import React from 'react';
 import Comment from './Comment';
 
+
 function ManageComments({ comments }) {
   return (
     <div>

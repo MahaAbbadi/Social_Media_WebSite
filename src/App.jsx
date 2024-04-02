@@ -14,7 +14,7 @@ function App() {
 
   return(
     <div>
-      <h1>Fakebook!</h1>
+      <h1>Social Spark!</h1>
        <CreatePostForm onPostSubmit={handlePostSubmit} />
        <div>
         {posts.map((post, index) => (
